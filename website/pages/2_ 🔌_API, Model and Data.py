@@ -11,11 +11,12 @@ st.markdown("# API, Model and Data 🔌")
 
 # Sidebar
 
-# sbcol = st.sidebar.columns(1)
-
 st.sidebar.write('Created by Lorcan Rae')
-st.sidebar.write('My other projects on [github](https://github.com/lorcanrae)!\
-    \nSee my experiences on [Linkedin](https://linkedin.com/in/lorcanrae)!')
+st.sidebar.write('[Front End repo](https://github.com/lorcanrae/spaceship-titanic-web)\
+    \n[Package, Model and EDA repo](https://github.com/lorcanrae/spaceship-titanic)\
+    \nView my other projects on [github](https://github.com/lorcanrae)!')
+
+st.sidebar.write('See my experiences on [Linkedin](https://linkedin.com/in/lorcanrae)!')
 
 st.sidebar.write('Created and deployed with:')
 
@@ -33,9 +34,6 @@ with sbcol3:
     st.image('https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg', width=60)
     st.image('https://streamlit.io/images/brand/streamlit-mark-color.png', width=65)
 
-st.sidebar.write('[Front End repo](https://github.com/lorcanrae/spaceship-titanic-web)\
-                \n[Package, Model and EDA repo](https://github.com/lorcanrae/spaceship-titanic)')
-
 # Content
 
 api_url = 'https://spaceship-titanic-api-zby5e6zv3q-ew.a.run.app'
@@ -49,10 +47,11 @@ st.markdown(f"""Generally, people who are older and spend more on Room Service, 
 
 st.markdown('### Modelling:')
 st.markdown("""An ensemble voting classifier composed of a Suport Vector Classifier with a Linear kernel, \
-KNN Classifier, and Gradient Boosted Random Forest was used. These models formed part of a \
+KNN Classifier, and Gradient Boosted Random Forest was used. These voting classifier was positioned at the end of a \
 pipeline that transformed, imputed, encoded, and scaled the data. Hyperparameters \
 where optimized using a gridsearch.
 The model has an accuracy of 80.0009% on the test data set.""")
+st.markdown('This model was trained in the cloud using GCP AI Platform - for my own practice.')
 
 st.markdown('### Data:')
 st.markdown("""The data used for the model is from the Spaceship Titanic dataset available on kaggle. \

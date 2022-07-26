@@ -14,8 +14,11 @@ st.markdown("### What could go wrong?!")
 # Sidebar
 
 st.sidebar.write('Created by Lorcan Rae')
-st.sidebar.write('My other projects on [github](https://github.com/lorcanrae)!\
-    \nSee my experiences on [Linkedin](https://linkedin.com/in/lorcanrae)!')
+st.sidebar.write('[Front End repo](https://github.com/lorcanrae/spaceship-titanic-web)\
+    \n[Package, Model and EDA repo](https://github.com/lorcanrae/spaceship-titanic)\
+    \nView my other projects on [github](https://github.com/lorcanrae)!')
+
+st.sidebar.write('See my experiences on [Linkedin](https://linkedin.com/in/lorcanrae)!')
 
 st.sidebar.write('Created and deployed with:')
 
@@ -32,9 +35,6 @@ with sbcol2:
 with sbcol3:
     st.image('https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg', width=60)
     st.image('https://streamlit.io/images/brand/streamlit-mark-color.png', width=65)
-
-st.sidebar.write('[Front End repo](https://github.com/lorcanrae/spaceship-titanic-web)\
-                \n[Package, Model and EDA repo](https://github.com/lorcanrae/spaceship-titanic)')
 
 # Blurb
 
