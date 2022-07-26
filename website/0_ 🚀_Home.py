@@ -92,7 +92,7 @@ VRDeck = st.number_input('How much will you spend on VR Entertainment?'
 
 # API and params
 
-url = 'https://spaceship-titanic-api-zby5e6zv3q-ew.a.run.app/predict'
+api_url = 'https://spaceship-titanic-api-zby5e6zv3q-ew.a.run.app/predict'
 
 params = dict(
     HomePlanet=HomePlanet,
@@ -113,7 +113,7 @@ params = dict(
 predict = st.button('Click here to see if you would survive the collision with the spacetime anomaly!')
 
 if predict:
-    response = requests.get(url, params=params)
+    response = requests.get(api_url, params=params)
     prediction = response.json()['Transported']
     if prediction:
         out_text = 'You where transported to an alternate dimension! Maybe for the better?'
