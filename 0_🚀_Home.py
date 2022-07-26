@@ -114,8 +114,7 @@ predict = st.button('Click here to see if you would survive the collision with t
 
 if predict:
     response = requests.get(api_url, params=params)
-    prediction = response.json()
-    pred = prediction['Transported']
+    prediction = response.json()['Transported']
     if prediction:
         out_text = 'You where transported to an alternate dimension! Maybe for the better?'
         st.error(out_text)
