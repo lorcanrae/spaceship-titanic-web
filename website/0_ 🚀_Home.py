@@ -2,28 +2,49 @@ import streamlit as st
 
 import requests
 
-# st.set_page_config(layout='wide')
+# Config
+
+st.set_page_config(layout='wide')
 
 # Title Text
 
-st.markdown("# Spaceship Titanic")
+st.markdown("# Spaceship Titanic 🚀")
 st.markdown("### What could go wrong?!")
 
 # Sidebar
 
-st.sidebar.write('by Lorcan Rae')
-st.sidebar.write('My other projects on [github](https://github.com/lorcanrae)!')
-st.sidebar.write('See my experiences on [Linkedin](https://linkedin.com/in/lorcanrae)')
+st.sidebar.write('Created by Lorcan Rae')
+st.sidebar.write('My other projects on [github](https://github.com/lorcanrae)!\
+    \nSee my experiences on [Linkedin](https://linkedin.com/in/lorcanrae)!')
+
+st.sidebar.write('Created and deployed with:')
+
+sbcol1, sbcol2, sbcol3 = st.sidebar.columns([1, 1, 1])
+
+with sbcol1:
+    st.image('https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg', width=60)
+    st.image('https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg', width=60)
+
+with sbcol2:
+    st.image('https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg', width=60)
+    st.image('https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg', width=70)
+
+with sbcol3:
+    st.image('https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg', width=60)
+    st.image('https://streamlit.io/images/brand/streamlit-mark-color.png', width=65)
+
+st.sidebar.write('[Front End repo](https://github.com/lorcanrae/spaceship-titanic-web)\
+                \n[Package, Model and EDA repo](https://github.com/lorcanrae/spaceship-titanic)')
 
 # Blurb
 
-st.markdown('''In the year 2912 the intersteller passenger liner _Spaceship Titanic_ \
+st.markdown("""In the year 2912 the intersteller passenger liner _Spaceship Titanic_ \
     has set out on its maiden voyage transporting almost 13,000 passengers from our solarsystem \
-    to three newly habitable exoplanets nearby.''')
+    to three newly habitable exoplanets nearby.""")
 
-st.markdown('''On route to the first destination, the unwary _Spaceship Titanic_ has collided with \
+st.markdown("""On route to the first destination, the unwary _Spaceship Titanic_ has collided with \
     a spacetime anomaly hidden within a dust cloud. Like it's namesake from 1000 years \
-    ealier, it has met a similar fate.''')
+    ealier, it has met a similar fate. 🧊""")
 
 # Input Parameters
 
@@ -31,10 +52,13 @@ st.markdown('### See if you would have survived!')
 st.markdown('##### Input Parameters:')
 
 homeplanet_options = ['Earth', 'Europo', 'Mars']
-HomePlanet = st.selectbox('What is your HomeWorld?', homeplanet_options)
+HomePlanet = st.selectbox('What home world are you travelling from?', homeplanet_options)
+
+Destination=st.selectbox('What planet are you travelling to?',
+                        ['TRAPPIST-1e', 'PSO J318.5-22', '55 Cancri e'])
 
 cryosleep_selector = st.selectbox('Are you going into Cryosleep?',
-                                ['Yes', 'No'])
+                                ['No', 'Yes'])
 CryoSleep = True if cryosleep_selector == 'Yes' else False
 
 cabin_deck_options = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'T']
@@ -50,11 +74,8 @@ cabin_side_selector = st.selectbox(
     )
 Cabin_Side = 'S' if cabin_side_selector == 'Starboard' else 'P'
 
-Destination=st.selectbox('What planet are you travelling to?',
-                        ['TRAPPIST-1e', 'PSO J318.5-22', '55 Cancri e'])
-
 vip_selector = st.selectbox('Are you a VIP', ['No', 'Yes'])
-VIP=False if vip_selector == "No" else True
+VIP = False if vip_selector == "No" else True
 
 Age=st.number_input('What is your age?', min_value=0, max_value=100, value=27)
 
@@ -98,5 +119,5 @@ if predict:
         out_text = 'You where transported to an alternate dimension! Maybe for the better?'
         st.error(out_text)
     else:
-        out_text = 'You where survived the collision with the anomaly! Did you really win though?'
+        out_text = 'You where survived the collision with the anomaly! But maybe the other dimension was better?'
         st.success(out_text)
