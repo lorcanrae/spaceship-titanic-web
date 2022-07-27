@@ -25,16 +25,16 @@ st.sidebar.write('Created and deployed with:')
 sbcol1, sbcol2, sbcol3 = st.sidebar.columns([1, 1, 1])
 
 with sbcol1:
-    st.image('https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg', caption='python', width=60)
-    st.image('https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg', caption='pandas', width=60)
+    st.image('https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg', width=60)
+    st.image('https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg', width=60)
 
 with sbcol2:
-    st.image('https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg', caption='GCP', width=60)
-    st.image('https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg', caption='sci-kit learn', width=70)
+    st.image('https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg', width=60)
+    st.image('https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg', width=70)
 
 with sbcol3:
-    st.image('https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg', caption='Docker', width=60)
-    st.image('https://streamlit.io/images/brand/streamlit-mark-color.png', caption='streamlit',width=65)
+    st.image('https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg', width=60)
+    st.image('https://streamlit.io/images/brand/streamlit-mark-color.png', width=65)
 
 # Blurb
 
