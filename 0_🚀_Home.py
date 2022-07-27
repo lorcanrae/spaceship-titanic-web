@@ -14,9 +14,9 @@ st.markdown("### What could go wrong?!")
 # Sidebar
 
 st.sidebar.write('Created by Lorcan Rae')
-st.sidebar.write('[Front End repo](https://github.com/lorcanrae/spaceship-titanic-web)\
-    \n[Package, Model and EDA repo](https://github.com/lorcanrae/spaceship-titanic)\
-    \nView my other projects on [github](https://github.com/lorcanrae)!')
+st.sidebar.write('''[Front End repo](https://github.com/lorcanrae/spaceship-titanic-web)
+    \n[Package, Model and EDA repo](https://github.com/lorcanrae/spaceship-titanic)
+    \nView my other projects on [github](https://github.com/lorcanrae)!''')
 
 st.sidebar.write('See my experiences on [Linkedin](https://linkedin.com/in/lorcanrae)!')
 
@@ -38,12 +38,12 @@ with sbcol3:
 
 # Blurb
 
-st.markdown("""In the year 2912 the intersteller passenger liner _Spaceship Titanic_ \
-    has set out on its maiden voyage transporting almost 13,000 passengers from our solarsystem \
+st.markdown("""In the year 2912 the intersteller passenger liner _Spaceship Titanic_
+    has set out on its maiden voyage transporting almost 13,000 passengers from our solarsystem
     to three newly habitable exoplanets nearby.""")
 
-st.markdown("""On route to the first destination, the unwary _Spaceship Titanic_ has collided with \
-    a spacetime anomaly hidden within a dust cloud. Like it's namesake from 1000 years \
+st.markdown("""On route to the first destination, the unwary _Spaceship Titanic_ has collided with
+    a spacetime anomaly hidden within a dust cloud. Like it's namesake from 1000 years
     ealier, it has met a similar fate. 🧊""")
 
 # Input Parameters
