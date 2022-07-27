@@ -12,8 +12,8 @@ st.markdown("# API, Model and Data 🔌")
 # Sidebar
 
 st.sidebar.write('Created by Lorcan Rae')
-st.sidebar.write('[Front End repo](https://github.com/lorcanrae/spaceship-titanic-web)\
-    \n[Package, Model and EDA repo](https://github.com/lorcanrae/spaceship-titanic)\
+st.sidebar.write('[Package, Model and EDA repo](https://github.com/lorcanrae/spaceship-titanic)\
+    \n[Front End repo](https://github.com/lorcanrae/spaceship-titanic-web)\
     \nView my other projects on [github](https://github.com/lorcanrae)!')
 
 st.sidebar.write('See my experiences on [Linkedin](https://linkedin.com/in/lorcanrae)!')
