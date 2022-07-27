@@ -47,7 +47,7 @@ st.markdown(f"""Generally, people who are older and spend more on Room Service, 
 
 st.markdown('### Modelling:')
 st.markdown("""An ensemble voting classifier composed of a Suport Vector Classifier with a Linear kernel, \
-KNN Classifier, and Gradient Boosted Random Forest was used. These voting classifier was positioned at the end of a \
+KNN Classifier, and Gradient Boosted Random Forest was used. The model was positioned at the end of a
 pipeline that transformed, imputed, encoded, and scaled the data. Hyperparameters \
 where optimized using a gridsearch.
 The model has an accuracy of 80.0009% on the test data set.""")
