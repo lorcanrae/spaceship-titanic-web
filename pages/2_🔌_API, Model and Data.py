@@ -57,5 +57,5 @@ st.markdown('### Data:')
 st.markdown("""The data used for the model is from the Spaceship Titanic dataset available on kaggle. \
 Refer to kaggles [Spaceship Titanic competition](https://www.kaggle.com/competitions/spaceship-titanic) for specifics. \
 I have performed an Exploratory Data Analysis of this data set, including Univariate and Bivariate anayslse, \
-available on my GH or on my [kaggle profile](https://www.kaggle.com/code/lorcansamuel/spaceship-titanic-eda-ensemble-using-pipes/notebook).
+available on my [github](https://github.com/lorcanrae/spaceship-titanic/tree/master/notebooks) or my [kaggle profile](https://www.kaggle.com/code/lorcansamuel/spaceship-titanic-eda-ensemble-using-pipes/notebook).
             """)
