@@ -46,7 +46,7 @@ st.markdown("""This API was created by containerising a python package with Dock
 st.markdown(f"""Generally, people who are older and spend more on Room Service, Food, Shopping, Spa and VR are not transported (10,000+ per category).""")
 
 st.markdown('### Modelling:')
-st.markdown("""An ensemble voting classifier composed of a Suport Vector Classifier with a Linear kernel,
+st.markdown("""An ensemble voting classifier composed of a Suport Vector Classifier with a RBF kernel,
 KNN Classifier, and Gradient Boosted Random Forest was used. The model was positioned at the end of a
 pipeline that transformed, imputed, encoded, and scaled the data. Hyperparameters
 where optimized using a gridsearch.
