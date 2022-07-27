@@ -25,16 +25,16 @@ st.sidebar.write('Created and deployed with:')
 sbcol1, sbcol2, sbcol3 = st.sidebar.columns([1, 1, 1])
 
 with sbcol1:
-    st.image('https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg', width=60)
-    st.image('https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg', width=60)
+    st.image('https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg', caption='python', width=60)
+    st.image('https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg', caption='pandas', width=60)
 
 with sbcol2:
-    st.image('https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg', width=60)
-    st.image('https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg', width=70)
+    st.image('https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg', caption='GCP', width=60)
+    st.image('https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg', caption='sci-kit learn', width=70)
 
 with sbcol3:
-    st.image('https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg', width=60)
-    st.image('https://streamlit.io/images/brand/streamlit-mark-color.png', width=65)
+    st.image('https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg', caption='Docker', width=60)
+    st.image('https://streamlit.io/images/brand/streamlit-mark-color.png', caption='streamlit',width=65)
 
 # Blurb
 
@@ -69,7 +69,7 @@ Cabin_Level = st.number_input('What level have you been assigned to? (1 - 1894)'
                             min_value=1, max_value=1894, step=1)
 
 cabin_side_selector = st.selectbox(
-    'Are you travelling on Port or Starboard sode of the ship',
+    'Are you travelling on Port or Starboard side of the ship',
     ['Port', 'Starboard']
     )
 Cabin_Side = 'S' if cabin_side_selector == 'Starboard' else 'P'
@@ -116,8 +116,8 @@ if predict:
     response = requests.get(api_url, params=params)
     prediction = response.json()['Transported']
     if prediction:
-        out_text = 'You where transported to an alternate dimension! Maybe for the better?'
+        out_text = 'You were transported to an alternate dimension! Maybe for the better?'
         st.error(out_text)
     else:
-        out_text = 'You where survived the collision with the anomaly! But maybe the other dimension was better?'
+        out_text = 'You survived the collision with the anomaly! But maybe the other dimension was better?'
         st.success(out_text)
