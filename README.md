@@ -6,6 +6,10 @@ Deployed on Streamlit. API deployed on GCP Cloud Run using Docker.
 
 Package, Model and EDA repo [here.](https://github.com/lorcanrae/spaceship-titanic)
 
+## Demo Link
+
+https://lorcanrae-spaceship-titanic-web-0--home-w79no8.streamlitapp.com/
+
 <p align='center', float='left'>
   <img src='https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg' width='75'>
   <img src='https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg' width='75'>
