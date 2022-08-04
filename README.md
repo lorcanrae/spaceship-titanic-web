@@ -4,6 +4,16 @@ The front end accesses the spaceship-titanic api deployed on GCP Cloud Run to se
 
 Deployed on streamlit.
 
-Active URL: https://lorcanrae-spaceship-titanic-web-0--home-w79no8.streamlitapp.com/
-
 Package, Model and EDA repo [here.](https://github.com/lorcanrae/spaceship-titanic)
+
+# Demo Link
+https://lorcanrae-spaceship-titanic-web-0--home-w79no8.streamlitapp.com/
+
+
+<p float='left'>
+  <img src='https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg' width='75'>
+  <img src='https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg' width='75'>
+  <img src='https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg' width='75'>
+  <img src='https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg' width='75'>
+  <img src='https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg' width='75'>
+  <img src='https://streamlit.io/images/brand/streamlit-mark-color.png' width='75'>
